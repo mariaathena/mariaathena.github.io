@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Maria Athena</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="site-logo" href="index.html">Maria Athena</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>About Maria</h1>
+        <p class="lead">Product manager and consultant helping founders ship the right thing, faster.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <p style="max-width: 640px;">
+          [Bio placeholder — a few paragraphs on background, industries worked in, and product philosophy go here.]
+        </p>
+        <h2 style="margin-top: 40px;">Experience</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Company / Role</h3>
+            <p>Years &middot; one-line summary of impact.</p>
+          </div>
+          <div class="card">
+            <h3>Company / Role</h3>
+            <p>Years &middot; one-line summary of impact.</p>
+          </div>
+          <div class="card">
+            <h3>Company / Role</h3>
+            <p>Years &middot; one-line summary of impact.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>&copy; <span id="year"></span> Maria Athena</span>
+      <span><a href="contact.html">hello@mariaathena.com</a></span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Maria Athena</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="site-logo" href="index.html">Maria Athena</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Get in touch</h1>
+        <p class="lead">Tell me a bit about what you're working on, and I'll follow up within a couple of days.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <!--
+          This is a static GitHub Pages site, so this form has no backend yet.
+          Wire it up to a form service (e.g. Formspree, Netlify Forms if migrating hosts)
+          before going live, or replace with the mailto link below.
+        -->
+        <form class="contact-form" action="#" method="post">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">What are you working on?</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button class="btn" type="submit">Send</button>
+        </form>
+
+        <p style="margin-top: 24px; color: var(--color-muted);">
+          Or reach out directly at <a href="mailto:hello@mariaathena.com">hello@mariaathena.com</a>.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>&copy; <span id="year"></span> Maria Athena</span>
+      <span><a href="contact.html">hello@mariaathena.com</a></span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
