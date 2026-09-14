@@ -567,19 +567,13 @@ h1.page-title, h2.section-title {
   gap: clamp(32px, 5vw, 72px);
   align-items: start;
 }
-.photo-placeholder {
+.about-photo {
+  display: block;
+  width: 100%;
   max-width: 360px;
   aspect-ratio: 4 / 5;
-  background: #D6BFB9;
+  object-fit: cover;
   border: 1px solid var(--border-wash);
-  display: flex;
-  align-items: flex-end;
-  padding: 18px;
-}
-.photo-placeholder span {
-  font-size: 13px;
-  line-height: 1.5;
-  color: #6A7076;
 }
 .about-copy { max-width: 680px; }
 .about-copy h2 {
